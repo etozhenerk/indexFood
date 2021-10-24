@@ -1,0 +1,56 @@
+.card
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 32px
+    border-radius: 20px
+    overflow: hidden
+    background-repeat: no-repeat
+    background-size: cover
+    min-width: 570px
+    min-height: 380px
+    &__header
+        z-index: 2
+    &__footer
+        z-index: 2
+    &__title
+        margin-top: 4px
+        margin-bottom: 21px
+        font-weight: 500
+        font-size: 24px
+        line-height: 23px
+    &__description
+        max-width: 200px
+        font-weight: 500
+        font-size: 16px
+        line-height: 23px
+    &__price
+        display: block
+        margin-bottom: 8px
+        font-weight: 500
+        font-size: 24px
+        line-height: 23px
+    &__delivery
+        display: block
+        font-weight: 500
+        font-size: 16px
+        line-height: 23px
+        margin-bottom: 25px
+    &--text-light
+        color: $white-color
+    &--sweet-basket
+        background-image: url("../img/cards/sweet-basket.png")
+    &--min
+        background-image: url("../img/cards/min.png")
+    &::before
+        content: ""
+        position: absolute
+        z-index: 1
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))

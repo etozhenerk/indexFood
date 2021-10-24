@@ -1,0 +1,39 @@
+.slide
+    position: relative
+    display: flex
+    align-items: center
+    padding: 100px
+    min-height: 400px
+    border-radius: 20px
+    background-repeat: no-repeat
+    background-size: cover
+    overflow: hidden
+    &__content
+        position: relative
+        max-width: 400px
+    &__title
+        margin-top: 0
+        margin-bottom: 15px
+        font-weight: bold
+        font-size: 50px
+        line-height: 51px
+    &__text
+        margin-bottom: 30px
+        font-weight: bold
+        font-size: 16px
+        line-height: 23px
+    &--text-light
+        background-color: $gray-color
+        color: $white-color
+    &--summer
+        background-image: url("../img/slider/summer.png")
+    &::before
+        content: ""
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%)
